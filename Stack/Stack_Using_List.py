@@ -38,18 +38,17 @@ class Stack:
         return print(self.top + 1)
 
 
-
-
-s = Stack(5)
-s.push(1)
-s.push(2)
-s.push(3)
-s.current_size()
-s.push(4)
-s.pop()
-s.push(5)
-s.peek()
-s.push(7)
-s.is_empty()
-s.current_size()
-s.is_full()
+if __name__ == '__main__':
+    s = Stack(5)
+    s.push(1)
+    s.push(2)
+    s.push(3)
+    s.current_size()
+    s.push(4)
+    s.pop()
+    s.push(5)
+    s.peek()
+    s.push(7)
+    s.is_empty()
+    s.current_size()
+    s.is_full()

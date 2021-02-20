@@ -42,28 +42,22 @@ class Queue:
             print(self.queue[self.FRONT])
 
 
-q = Queue(5)
-print(q.is_empty())
-print(q.is_full())
-
-q.enqueue(1)
-q.enqueue(2)
-q.enqueue(3)
-q.dequeue()
-q.enqueue(4)
-q.peek()
-q.enqueue(5)
-print('full:', q.is_full())
-q.dequeue()
-q.dequeue()
-q.dequeue()
-print('empty:', q.is_empty())
-q.dequeue()
-print('empty:', q.is_empty())
-q.enqueue(1)
-
-
-x = '20'
-y ='30'
-
-print("30">'29')
+if __name__ == '__main__':
+    q = Queue(5)
+    print(q.is_empty())
+    print(q.is_full())
+    q.enqueue(1)
+    q.enqueue(2)
+    q.enqueue(3)
+    q.dequeue()
+    q.enqueue(4)
+    q.peek()
+    q.enqueue(5)
+    print('full:', q.is_full())
+    q.dequeue()
+    q.dequeue()
+    q.dequeue()
+    print('empty:', q.is_empty())
+    q.dequeue()
+    print('empty:', q.is_empty())
+    q.enqueue(1)
