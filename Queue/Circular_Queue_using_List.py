@@ -21,7 +21,8 @@ class CirQueue:
     # a = Deco()
 
     def is_full(self):
-        return True if self.REAR == self.FRONT - 1 or (self.FRONT == 0 and self.REAR == self.capacity - 1) else False
+        # return True if self.REAR == self.FRONT - 1 or (self.FRONT == 0 and self.REAR == self.capacity - 1) else False
+        return True if (self.REAR + 1) % self.capacity == self.FRONT else False
 
     def is_empty(self):
         return True if self.REAR == -1 and self.FRONT == -1 else False
